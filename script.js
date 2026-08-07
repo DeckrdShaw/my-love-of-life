@@ -124,14 +124,6 @@ function loadLetter() {
   document.getElementById("letterText").textContent =
     letterParts[letterIndex].text;
 
-  const photoNumber = letterIndex + 1;
-
-  document.getElementById("memoryPhoto").src =
-    `./images/photo${photoNumber}.jpg`;
-
-  document.getElementById("memoryPhoto").alt =
-    `Memory ${photoNumber} of us`;
-
   const button = document.getElementById("letterButton");
 
   if (letterIndex === letterParts.length - 1) {
