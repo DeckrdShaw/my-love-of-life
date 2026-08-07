@@ -11,7 +11,7 @@ const gates = [
   },
   {
     q: "What nickname might I call you when I am being annoying?",
-    answers: ["gadha"],
+    answers: ["baby", "babyy", "babyyyy", "my baby"],
     msg: "Don’t get angry. It is one of my favourite names for you. 🤭"
   },
   {
