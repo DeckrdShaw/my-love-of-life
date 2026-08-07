@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Love of Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <section id="welcome" class="screen active">
+      <p class="eyebrow">A little journey for you</p>
+      <h1>My Love of Life</h1>
+      <p>For my Priyatama 🌙</p>
+      <button onclick="startJourney()">Begin the journey</button>
+    </section>
+
+    <section id="gate" class="screen">
+      <p class="eyebrow" id="gateNumber"></p>
+      <h2 id="question"></h2>
+
+      <input
+        id="answer"
+        type="text"
+        placeholder="Type your answer"
+        autocomplete="off"
+      >
+
+      <button onclick="checkAnswer()">Open the gate</button>
+      <p id="feedback"></p>
+    </section>
+
+    <section id="reveal" class="screen">
+      <div class="flower">🌸</div>
+      <p id="revealText"></p>
+      <button onclick="continueJourney()">Continue</button>
+    </section>
+
+    <section id="letter" class="screen">
+      <p class="eyebrow">For my love of life</p>
+      <h2 id="letterTitle"></h2>
+      <p id="letterText"></p>
+
+      <button id="letterButton" onclick="nextLetter()">
+        Read the next part
+      </button>
+    </section>
+
+    <section id="final" class="screen">
+      <div class="flowers">🌷 ✨ 🌸 ✨ 🌷</div>
+
+      <h2>One day...</h2>
+
+      <p>
+        One day, the distance will become a memory,
+        and I’ll be holding your hand for real.
+      </p>
+
+      <p class="signature">
+        I love you more than anyone, my love of life. ☺️🫶😘
+      </p>
+    </section>
+
+  </main>
+
+  <button class="music-button" onclick="toggleMusic()">
+    ♫ Play our song
+  </button>
+
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
